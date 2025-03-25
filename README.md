@@ -10,3 +10,6 @@ Project Name: Car Dealership Calculator
 
  Project Description: 
 This code is a Car Dealership Calculator is a code that helps users estimate car affordability, loan payments, and financial feasibility. The code will give the users a list of cars and depending on their answers of the questions provided, the code will give an output of the best car for them depending on their circumstances. 
+
+Docker: 
+During this project, we used docker to build images and run the containers so that way we could efficiently test, build and run the code from different environments. 
