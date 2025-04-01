@@ -9,7 +9,9 @@ Project Name: Car Dealership Calculator
 
 
  Project Description: 
-This code is a Car Dealership Calculator is a code that helps users estimate car affordability, loan payments, and financial feasibility. The code will give the users a list of cars and depending on their answers of the questions provided, the code will give an output of the best car for them depending on their circumstances. 
+This code is a Car Dealership Calculator is a code that helps users estimate car affordability, loan payments, and financial feasibility. The code will give the users a list of cars, and depending on their answers to the questions provided, the code will give an output of the best car for them, depending on their circumstances. 
 
 Docker: 
-During this project, we used docker to build images and run the containers so that way we could efficiently test, build and run the code from different environments. 
+During this project, we used docker to build images and run the containers so that way we could efficiently test, build, and run the code from different environments. 
+
+Docker and Github Action: While constructing this project, we utilized Github Workflow (Simply Workflow) and InillejIdea to build and push image to Docker. So that way we could pull the images from Docker and run them on our computers. 
