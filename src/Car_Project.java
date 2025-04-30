@@ -143,18 +143,18 @@ public class Car_Project {
                     System.out.println("4. 48 months");
                     String rately = rate.next();
                     if (rately.equalsIgnoreCase("1")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposit)/12) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposit)/12) );
                     }
                     if (rately.equalsIgnoreCase("2")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposit)/24) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposit)/24) );
                     }
 
                     if (rately.equalsIgnoreCase("3")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposit)/36) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposit)/36) );
                     }
 
                     if (rately.equalsIgnoreCase("4")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposit)/48) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposit)/48) );
 
                     }
 
@@ -182,17 +182,17 @@ public class Car_Project {
                 CashPayment cashpayment = new CashPayment(0);
                 cashpayment.setMoney(22000);
                 if(leasing.equalsIgnoreCase("1")){
-                    System.out.println("Your monthly payment is $"+ ((cashpayment.getMoney()-5000)/24) + "for 2 years!");
+                    System.out.println("Your monthly payment is $"+ Math.round((cashpayment.getMoney()-5000)/24) + "for 2 years!");
 
                 }
                 if (leasing.equalsIgnoreCase("2")){
-                    System.out.println("Your monthly payment is $" + ((cashpayment.getMoney()-7000)/36) + " for 3 years!" );
+                    System.out.println("Your monthly payment is $" + Math.round((cashpayment.getMoney()-7000)/36) + " for 3 years!" );
                 }
                 if (leasing.equalsIgnoreCase("3")){
-                    System.out.println("Your monthly payment is $" +((cashpayment.getMoney() - 9000)/48) + " for 4 years!" );
+                    System.out.println("Your monthly payment is $" +Math.round((cashpayment.getMoney() - 9000)/48) + " for 4 years!" );
                 }
                 if (leasing.equalsIgnoreCase("4")) {
-                    System.out.println("Your monthly payment is $" + ((cashpayment.getMoney() - 11000)/60) + " for 5 years!");
+                    System.out.println("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 11000)/60) + " for 5 years!");
                 }
 
             }
@@ -260,16 +260,16 @@ public class Car_Project {
                     System.out.println("4. 48 months");
                     String month = rates.next();
                     if (month.equalsIgnoreCase("1")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposittwo)/12) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposittwo)/12) );
                     }
                     if (month.equalsIgnoreCase("2")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposittwo)/24) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposittwo)/24) );
                     }
                     if (month.equalsIgnoreCase("3")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposittwo)/36) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposittwo)/36) );
                     }
                     if (month.equalsIgnoreCase("4")){
-                        System.out.println("Your monthly payment will be " + "$"+((cashpayment.getMoney() - deposittwo)/48) );
+                        System.out.println("Your monthly payment will be " + "$"+Math.round((cashpayment.getMoney() - deposittwo)/48) );
                     }
 
                 }
@@ -288,16 +288,16 @@ public class Car_Project {
                 CashPayment cashpayment = new CashPayment(0);
                 cashpayment.setMoney(18500);
                 if (leases.equalsIgnoreCase("1")){
-                    System.out.println("Your monthly payment is $"+((cashpayment.getMoney()-5000)/24)+ " for 2 years!");
+                    System.out.println("Your monthly payment is $"+Math.round((cashpayment.getMoney()-5000)/24)+ " for 2 years!");
                 }
                 if (leases.equalsIgnoreCase("2")){
-                    System.out.println("Your monthly payment is $"+((cashpayment.getMoney()-7000)/36)+ " for 3 years!");
+                    System.out.println("Your monthly payment is $"+Math.round((cashpayment.getMoney()-7000)/36)+ " for 3 years!");
                 }
                 if (leases.equalsIgnoreCase("3")){
-                    System.out.println("Your monthly payment is $"+((cashpayment.getMoney()-9000)/48)+ " for 3 years!");
+                    System.out.println("Your monthly payment is $"+Math.round((cashpayment.getMoney()-9000)/48)+ " for 3 years!");
                 }
                 if (leases.equalsIgnoreCase("4")){
-                    System.out.println("Your monthly payment is $"+((cashpayment.getMoney()-11000)/60)+ " for 5 years!");
+                    System.out.println("Your monthly payment is $"+Math.round((cashpayment.getMoney()-11000)/60)+ " for 5 years!");
                 }
                 System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type2+"!");
             }
@@ -359,16 +359,16 @@ public class Car_Project {
                     System.out.println("4. 48 months");
                     String mo = ratez.next();
                     if (mo.equalsIgnoreCase("1")) {
-                        System.out.println("Your monthly payment will be " + "$" + ((cashpayment.getMoney() - depositthree) / 12));
+                        System.out.println("Your monthly payment will be " + "$" + Math.round((cashpayment.getMoney() - depositthree) / 12));
                     }
                     if (mo.equalsIgnoreCase("2")) {
-                        System.out.println("Your monthly payment will be " + "$" + ((cashpayment.getMoney() - depositthree) / 24));
+                        System.out.println("Your monthly payment will be " + "$" + Math.round((cashpayment.getMoney() - depositthree) / 24));
                     }
                     if (mo.equalsIgnoreCase("3")) {
-                        System.out.println("Your monthly payment will be " + "$" + ((cashpayment.getMoney() - depositthree) / 36));
+                        System.out.println("Your monthly payment will be " + "$" + Math.round((cashpayment.getMoney() - depositthree) / 36));
                     }
                     if (mo.equalsIgnoreCase("4")) {
-                        System.out.println("Your monthly payment will be " + "$" + ((cashpayment.getMoney() - depositthree) / 48));
+                        System.out.println("Your monthly payment will be " + "$" + Math.round((cashpayment.getMoney() - depositthree) / 48));
                     }
 
 
@@ -388,18 +388,18 @@ public class Car_Project {
                 CashPayment cashpayment = new CashPayment(0);
                 cashpayment.setMoney(27000);
                 if (leasings.equalsIgnoreCase("1")) {
-                    System.out.printf("Your monthly payment is $" + ((cashpayment.getMoney() - 5000) / 24) + "for 2 years!");
+                    System.out.printf("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 5000) / 24) + "for 2 years!");
 
                 }
 
                 if (leasings.equalsIgnoreCase("2")) {
-                    System.out.printf("Your monthly payment is $" + ((cashpayment.getMoney() - 7000) / 36) + " for 3 years!");
+                    System.out.printf("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 7000) / 36) + " for 3 years!");
                 }
                 if (leasings.equalsIgnoreCase("3")) {
-                    System.out.printf("Your monthly payment is $" + ((cashpayment.getMoney() - 9000) / 48) + " for 4 years!");
+                    System.out.printf("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 9000) / 48) + " for 4 years!");
                 }
                 if (leasings.equalsIgnoreCase("4")) {
-                    System.out.printf("Your monthly payment is $" + ((cashpayment.getMoney() - 11000) / 60) + " for 5 years!");
+                    System.out.printf("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 11000) / 60) + " for 5 years!");
                 }
 
 
@@ -463,16 +463,16 @@ public class Car_Project {
                   System.out.println("4. 48 months");
                   String times = methods.next();
                   if (times.equalsIgnoreCase("1")){
-                      System.out.println("Your monthly payment will be $" + ((cashPayment.getMoney()-lastdeposit)/12));
+                      System.out.println("Your monthly payment will be $" + Math.round((cashPayment.getMoney()-lastdeposit)/12));
                   }
                   if (times.equalsIgnoreCase("2")){
-                      System.out.println("Your monthly payment will be $" + ((cashPayment.getMoney()-lastdeposit)/24));
+                      System.out.println("Your monthly payment will be $" + Math.round((cashPayment.getMoney()-lastdeposit)/24));
                   }
                   if (times.equalsIgnoreCase("3")){
-                      System.out.println("Your monthly payment will be $" + ((cashPayment.getMoney()-lastdeposit)/36));
+                      System.out.println("Your monthly payment will be $" + Math.round((cashPayment.getMoney()-lastdeposit)/36));
                   }
                   if (times.equalsIgnoreCase("4")){
-                      System.out.println("Your monthly payment will be $" + ((cashPayment.getMoney()-lastdeposit)/48));
+                      System.out.println("Your monthly payment will be $" + Math.round((cashPayment.getMoney()-lastdeposit)/48));
                   }
 
               }
@@ -487,16 +487,16 @@ public class Car_Project {
                 CashPayment cashPayment = new CashPayment(0);
                 cashPayment.setMoney(40000);
                 if(leases.equalsIgnoreCase("1")){
-                  System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-5000)/24));
+                  System.out.println("Your monthly payment is $" + Math.round((cashPayment.getMoney()-5000)/24));
                 }
                 if(leases.equalsIgnoreCase("2")){
-                    System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-7000)/36));
+                    System.out.println("Your monthly payment is $" + Math.round((cashPayment.getMoney()-7000)/36));
                 }
                 if(leases.equalsIgnoreCase("3")){
-                    System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-9000)/48));
+                    System.out.println("Your monthly payment is $" + Math.round((cashPayment.getMoney()-9000)/48));
                 }
                 if(leases.equalsIgnoreCase("4")){
-                    System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-11000)/60));
+                    System.out.println("Your monthly payment is $" + Math.round((cashPayment.getMoney()-11000)/60));
                 }
             }
             System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type4+"!");
