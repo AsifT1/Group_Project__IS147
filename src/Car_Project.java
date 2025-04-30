@@ -4,6 +4,7 @@ public class Car_Project {
 
     public static void main(String[] args) {
 
+
         
         Scanner carModel = new Scanner(System.in);
 
@@ -75,6 +76,9 @@ public class Car_Project {
             if(paymethod.equalsIgnoreCase("1")){
                 CashPayment cashpayment = new CashPayment(0);
                 cashpayment.setMoney(22000);
+                CashSent cashsent = new CashSent();
+
+                cashsent.processed();
                 System.out.println("Congratulations!! You just bought this " + make.type + " for $"+cashpayment.getMoney());
             }
             if(paymethod.equalsIgnoreCase("2")){
@@ -198,6 +202,9 @@ public class Car_Project {
             if(corolla.equalsIgnoreCase("1")) {
                 CashPayment cashpayment = new CashPayment(0);
                 cashpayment.setMoney(18500);
+                CashSent cashsent = new CashSent();
+
+                cashsent.processed();
                 System.out.println("Congratulations!! You just bought this " + make.type2 + " for $" + cashpayment.getMoney());
             }
             if(corolla.equalsIgnoreCase("2")){
@@ -300,6 +307,8 @@ public class Car_Project {
             if(opts.equalsIgnoreCase("1")){
                 CashPayment cashpayment = new CashPayment(0);
                 cashpayment.setMoney(27000);
+                CashSent cashsent = new CashSent();
+                cashsent.processed();
                 System.out.println("Congratulations!! You just bought this " + make.type3 + " for $"+cashpayment.getMoney());
             }
             if(opts.equalsIgnoreCase("2")){
@@ -400,6 +409,8 @@ public class Car_Project {
             if(paymenttype.equalsIgnoreCase("1")) {
                 CashPayment cashpayment = new CashPayment(0);
                 cashpayment.setMoney(40000);
+                CashSent cashsent = new CashSent();
+                cashsent.processed();
                 System.out.println("Congratulations!! You just bought this " + make.type4 + "for $" + cashpayment.getMoney());
             }
             if(paymenttype.equalsIgnoreCase("2")){
