@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Car_Project {
 
@@ -56,14 +57,22 @@ public class Car_Project {
         System.out.println("\nHere's some cars available near your provided area" + location + ":");
 
         Scanner model = new Scanner(System.in);
+        Random rand = new Random();
        // Car listing w/ prices 
         System.out.println("1. 2021 Honda Civic - $22,000");
         System.out.println("2. 2019 Toyota Corolla - $18,500");
         System.out.println("3. 2020 Ford Mustang - $27,000");
         System.out.println("4. 2021 Tesla Model 3 - $40,000");
+        System.out.println("5. Randomly choose one!");
         System.out.println("\n Which model are you interested in? ");
         String modelresponse = model.next();
         Make make = new Make();
+        Condition conditionthree = new Condition("brand ", "new ");
+        if(modelresponse.equalsIgnoreCase("5")){
+            int randomNum = rand.nextInt(4) + 1;
+            modelresponse = String.valueOf(randomNum);
+            System.out.println("You`ve been given: " + modelresponse);
+        }
         if(modelresponse.equalsIgnoreCase("1")){
 
             Scanner pay = new Scanner(System.in);
@@ -187,7 +196,7 @@ public class Car_Project {
                 }
 
             }
-            System.out.println("Congratulations on your brand new " + make.type+"!");
+            System.out.println("Congratulations on your " +(conditionthree.type) + (conditionthree.speed) + make.type+"!");
 
 
         }
@@ -290,7 +299,7 @@ public class Car_Project {
                 if (leases.equalsIgnoreCase("4")){
                     System.out.println("Your monthly payment is $"+((cashpayment.getMoney()-11000)/60)+ " for 5 years!");
                 }
-                System.out.println("Congratulations on your new " + make.type2+"!");
+                System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type2+"!");
             }
 
         }
@@ -396,7 +405,7 @@ public class Car_Project {
 
 
             }
-            System.out.println("Congratulations on your new " + make.type3+"!");
+            System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type3+"!");
         }
         if (modelresponse.equalsIgnoreCase("4")){
             Scanner paying = new Scanner(System.in);
@@ -478,19 +487,19 @@ public class Car_Project {
                 CashPayment cashPayment = new CashPayment(0);
                 cashPayment.setMoney(40000);
                 if(leases.equalsIgnoreCase("1")){
-                  System.out.println("Your monthy payment is $" + ((cashPayment.getMoney()-5000)/24));
+                  System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-5000)/24));
                 }
                 if(leases.equalsIgnoreCase("2")){
-                    System.out.println("Your monthy payment is $" + ((cashPayment.getMoney()-7000)/36));
+                    System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-7000)/36));
                 }
                 if(leases.equalsIgnoreCase("3")){
-                    System.out.println("Your monthy payment is $" + ((cashPayment.getMoney()-9000)/48));
+                    System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-9000)/48));
                 }
                 if(leases.equalsIgnoreCase("4")){
-                    System.out.println("Your monthy payment is $" + ((cashPayment.getMoney()-11000)/60));
+                    System.out.println("Your monthly payment is $" + ((cashPayment.getMoney()-11000)/60));
                 }
             }
-            System.out.println("Congratulations on your new " + make.type4+"!");
+            System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type4+"!");
         }
 
     }
