@@ -65,9 +65,30 @@ public class Car_Project {
         System.out.println("4. 2021 Tesla Model 3 - $40,000");
         System.out.println("5. Randomly choose one!");
         System.out.println("\n Which model are you interested in? ");
+
+
+
         String modelresponse = model.next();
+
         Make make = new Make();
         Condition conditionthree = new Condition("brand ", "new ");
+        switch(modelresponse){
+            case "6":
+                System.out.printf("Sorry! That`s not a valid option! Goodbye!");
+                break;
+            case "7":
+                System.out.printf("Sorry! That`s not a valid option! Goodbye!");
+                break;
+            case "8":
+                System.out.printf("Sorry! That`s not a valid option! Goodbye!");
+                break;
+            case "9":
+                System.out.printf("Sorry! That`s not a valid option! Goodbye!");
+                break;
+            case "10":
+                System.out.printf("Sorry! That`s not a valid option! Goodbye!");
+                break;
+        }
         if(modelresponse.equalsIgnoreCase("5")){
             int randomNum = rand.nextInt(4) + 1;
             modelresponse = String.valueOf(randomNum);
