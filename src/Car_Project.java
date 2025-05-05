@@ -58,6 +58,13 @@ public class Car_Project {
 
         Scanner model = new Scanner(System.in);
         Random rand = new Random();
+        List list1 = new List("Honda Civic");
+        List list2 = new List("Toyota Corolla");
+        List list3 = new List("Ford Mustang");
+        List list4 = new List("Tesla Model 3");
+
+        List.displayList();
+
        // Car listing w/ prices 
         System.out.println("1. 2021 Honda Civic - $22,000");
         System.out.println("2. 2019 Toyota Corolla - $18,500");
@@ -522,6 +529,9 @@ public class Car_Project {
             }
             System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type4+"!");
         }
+        AbstractTwo abstracttwo = new AbstractTwo();
+
+        abstracttwo.load();
 
     }
 }
