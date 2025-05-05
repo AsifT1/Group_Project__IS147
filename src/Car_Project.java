@@ -327,9 +327,9 @@ public class Car_Project {
                 if (leases.equalsIgnoreCase("4")){
                     System.out.println("Your monthly payment is $"+Math.round((cashpayment.getMoney()-11000)/60)+ " for 5 years!");
                 }
-                System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type2+"!");
-            }
 
+            }
+            System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type2+"!");
         }
 
         if (modelresponse.equalsIgnoreCase("3")){
@@ -427,7 +427,7 @@ public class Car_Project {
                     System.out.printf("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 9000) / 48) + " for 4 years!");
                 }
                 if (leasings.equalsIgnoreCase("4")) {
-                    System.out.printf("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 11000) / 60) + " for 5 years!");
+                    System.out.println("Your monthly payment is $" + Math.round((cashpayment.getMoney() - 11000) / 60) + " for 5 years!");
                 }
 
 
