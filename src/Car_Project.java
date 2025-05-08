@@ -136,7 +136,7 @@ public class Car_Project {
                     System.out.println("Alright! What is your credit score? ");
                     int creditresponse = credit.nextInt();
 
-                    if (creditresponse >= 500)
+                    if (creditresponse >= 500 && creditresponse <= 850)
                         System.out.println("Alright! You`ve been approved!");
                         else {
                             System.out.println("Bro.... get out of here");
@@ -225,6 +225,8 @@ public class Car_Project {
 
             }
             System.out.println("Congratulations on your " +(conditionthree.type) + (conditionthree.speed) + make.type+"!");
+            AbstractTwo abstracttwo = new AbstractTwo();
+            abstracttwo.load();
 
 
         }
@@ -257,7 +259,7 @@ public class Car_Project {
                     System.out.println("Alright! What is your credit score?");
                     int creditcard = cred.nextInt();
 
-                    if (creditcard >= 500)
+                    if (creditcard >= 500 && creditcard <= 850)
                     System.out.println("Alright! You`ve been approved!");
                     else {
                         System.out.println("Get out of my shop");
@@ -330,6 +332,8 @@ public class Car_Project {
 
             }
             System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type2+"!");
+            AbstractTwo abstracttwo = new AbstractTwo();
+            abstracttwo.load();
         }
 
         if (modelresponse.equalsIgnoreCase("3")){
@@ -360,7 +364,7 @@ public class Car_Project {
                     Scanner score = new Scanner(System.in);
                     System.out.println("Alright! What is your credit score? ");
                     int creditnum = score.nextInt();
-                    if (creditnum >= 500)
+                    if (creditnum >= 500 && creditnum <= 850)
                     System.out.println("Alright! You`re approved!");
                     else {
                         System.out.println("Please leave...");
@@ -434,6 +438,8 @@ public class Car_Project {
 
             }
             System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type3+"!");
+            AbstractTwo abstracttwo = new AbstractTwo();
+            abstracttwo.load();
         }
         if (modelresponse.equalsIgnoreCase("4")){
             Scanner paying = new Scanner(System.in);
@@ -463,7 +469,7 @@ public class Car_Project {
                   System.out.println("Alright! What is your credit score!");
                   int creditcardmonth = creditpay.nextInt();
 
-                  if (creditcardmonth >= 500)
+                  if (creditcardmonth >= 500 && creditcardmonth <= 850)
                       System.out.println("Alright! You`ve been approved!");
                   else{
                       System.out.println("Dude get out of here..");
@@ -528,12 +534,15 @@ public class Car_Project {
                 }
             }
             System.out.println("Congratulations on your " + (conditionthree.type) + (conditionthree.speed) + make.type4+"!");
+            AbstractTwo abstracttwo = new AbstractTwo();
+            abstracttwo.load();
         }
-        AbstractTwo abstracttwo = new AbstractTwo();
 
-        abstracttwo.load();
+
+
 
     }
+
 }
 
 
