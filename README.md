@@ -3,7 +3,7 @@ Project Name: Car Dealership Calculator
  Team Members & Roles
 
 - Raihan (General Manager, Organizer)
-- Asif (Coder, Organizer)
+- Asif (Coder)
 - Isaac (Debugger)
 - Mylah (Coder)
 
